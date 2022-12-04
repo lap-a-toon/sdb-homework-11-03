@@ -6,8 +6,11 @@
 
 Установите и запустите elasticsearch, после чего поменяйте параметр cluster_name на случайный. 
 
-*Приведите скриншот команды 'curl -X GET 'localhost:9200/_cluster/health?pretty', сделанной на сервере с установленным elasticsearch. Где будет виден нестандартный cluster_name*
-
+	
+```
+curl -X GET 'localhost:9200/_cluster/health?pretty'
+```
+![Elasticsearch custom cluster_name](./images/elasticsearch-1.jpg)
 ---
 
 ### Задание 2. Kibana.
