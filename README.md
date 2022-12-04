@@ -16,8 +16,12 @@ curl -X GET 'localhost:9200/_cluster/health?pretty'
 ### Задание 2. Kibana.
 
 Установите и запустите kibana.
-
 *Приведите скриншот интерфейса kibana на странице http://<ip вашего сервера>:5601/app/dev_tools#/console, где будет выполнен запрос GET /_cluster/health?pretty*
+```
+Правильный URL:
+http://<ip вашего сервера>:5601/app/kibana#/dev_tools/console
+```
+![Kibana Console](./images/kibana-1.jpg)
 
 ---
 
