@@ -28,15 +28,14 @@ http://<ip вашего сервера>:5601/app/kibana#/dev_tools/console
 ### Задание 3. Logstash.
 
 Установить и запустить Logstash и Nginx. С помощью Logstash отправить access-лог nginx в Elasticsearch. 
-
 *Приведите скриншот интерфейса kibana, на котором видны логи nginx.*
+![Kibana Logstash Nginx](./images/kibana-logstash-nginx.jpg)
 
 ---
 
 ### Задание 4. Filebeat. 
 
 Установить и запустить Filebeat. Переключить поставку логов Nginx с Logstash на Filebeat. 
-
 *Приведите скриншот интерфейса kibana, на котором видны логи nginx, которые были отправлены через Filebeat.*
 
 
