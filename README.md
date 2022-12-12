@@ -37,6 +37,7 @@ http://<ip вашего сервера>:5601/app/kibana#/dev_tools/console
 
 Установить и запустить Filebeat. Переключить поставку логов Nginx с Logstash на Filebeat. 
 *Приведите скриншот интерфейса kibana, на котором видны логи nginx, которые были отправлены через Filebeat.*
+![Kibana Filebeat Nginx](./images/kibana-filebeat-nginx.jpg)
 
 
 ## Дополнительные задания (со звездочкой*)

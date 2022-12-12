@@ -79,6 +79,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
+    apt install -y default-jre nginx
     cd /vagrant
     # You should get somewhere following DEB-packets
     wget https://mirror.yandex.ru/mirrors/elastic/7/pool/main/e/elasticsearch/elasticsearch-7.5.2-amd64.deb
@@ -87,16 +88,15 @@ Vagrant.configure("2") do |config|
     systemctl restart elasticsearch
 
     wget https://mirror.yandex.ru/mirrors/elastic/7/pool/main/k/kibana/kibana-7.5.2-amd64.deb
-    dpkg -i kibana-7.5.2-amd64.deb
-    sed -i "s/#server.host: \"localhost\"/server.host: \"0.0.0.0\"/" /etc/kibana/kibana.yml
-    systemctl restart kibana
+    #dpkg -i kibana-7.5.2-amd64.deb
+    #sed -i "s/#server.host: \"localhost\"/server.host: \"0.0.0.0\"/" /etc/kibana/kibana.yml
+    #systemctl restart kibana
     
-    apt install -y default-jre nginx
     wget https://mirror.yandex.ru/mirrors/elastic/7/pool/main/l/logstash/logstash-7.5.2.deb
-    dpkg -i logstash-7.5.2.deb
-    systemctl restart logstash
+    #dpkg -i logstash-7.5.2.deb
+    #systemctl restart logstash
 
     wget https://mirror.yandex.ru/mirrors/elastic/7/pool/main/f/filebeat/filebeat-7.5.2-amd64.deb
-    dpkg -i filebeat-7.5.2-amd64.deb
+    #dpkg -i filebeat-7.5.2-amd64.deb
 SHELL
 end
